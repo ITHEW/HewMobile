@@ -60,7 +60,8 @@ export default function LoginScreen() {
                       throw new Error(dataDetail.message || 'Gagal ambil detail');
                     }
                     await login(data.refreshToken, dataDetail)
-                    navigation.replace('Dashboard');
+                    // navigation.replace('HomeScreen');
+                    navigation.navigate('Dashboard')
                 }else{
                     Alert.alert('Login Gagal', data.message || 'Periksa kembali NIK dan Password.');
                 }

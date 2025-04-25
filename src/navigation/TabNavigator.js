@@ -25,9 +25,21 @@ export default function TabNavigator() {
         // --- Header (Top Navbar) ---
         headerShown: true,
         headerStyle: {
-          backgroundColor: '#00600a',
+          backgroundColor: '#78cf81',
         },
         headerTintColor: '#fff',
+        headerTitle: '', 
+        headerLeft: () => (
+          <Image
+            source={require('../../assets/images/logo.png')}
+            style={{
+              width: 100,
+              height: 30,
+              resizeMode: 'contain',
+              marginLeft: 12,
+            }}
+          />
+        ),
         // letakkan foto profile di kanan
         headerRight: () => (
             <Image
@@ -46,10 +58,10 @@ export default function TabNavigator() {
             />
           ),
         tabBarActiveTintColor: '#fff',
-        tabBarInactiveTintColor: '#b6b9b6',
+        tabBarInactiveTintColor: '#616161',
         // Style container navbar
         tabBarStyle: {
-            backgroundColor: '#00600a',    // biru tua
+            backgroundColor: '#78cf81',    // biru tua
             borderTopWidth: 0,              // hilangkan garis atas
             elevation: 5,                   // shadow Android
             height: 60,
